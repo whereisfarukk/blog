@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev docs/",
+    "docs:build": "vitepress build docs/",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "markdown-it-mermaid": "^0.2.5",
+    "vitepress": "^1.4.0"
+  },
+  "dependencies": {
+    "katex": "^0.16.11",
+    "mermaid": "^11.3.0"
+  }
+}
