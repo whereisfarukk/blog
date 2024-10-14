@@ -61,6 +61,7 @@ export default defineConfig({
       provider: "local",
     },
     lastUpdated: true,
+    ignoreDeadLinks: true,
     head: [
       [
         "script",
