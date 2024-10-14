@@ -3,6 +3,7 @@ import markdownItMathjax from "markdown-it-mathjax3"; // Import the math plugin
 // import markdownItMermaid from "markdown-it-mermaid"; // Ensure this is imported
 
 export default defineConfig({
+  base: "/Blog/",
   title: "Whereisfarukk",
   description: "",
   base: "/Blog/",
