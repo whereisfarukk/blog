@@ -4,8 +4,7 @@ import markdownItMathjax from "markdown-it-mathjax3"; // Import the math plugin
 
 export default defineConfig({
   title: "Whereisfarukk",
-  description:
-    "Crowd sourced collection of interview questions of different BD tech companies",
+  description: "",
   base: "/Blog/",
   cleanUrls: true,
   themeConfig: {
