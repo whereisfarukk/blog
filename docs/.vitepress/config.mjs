@@ -6,7 +6,6 @@ export default defineConfig({
   base: "/Blog/",
   title: "Whereisfarukk",
   description: "",
-  base: "/Blog/",
   cleanUrls: true,
   themeConfig: {
     nav: [
