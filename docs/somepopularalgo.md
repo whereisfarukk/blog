@@ -126,9 +126,10 @@ void solve() {
 
 ## Euler's totient function
 
-Euler's totient function, also known as phi-function $\phi(n)$ , counts the number of integers between 1 and  n  inclusive, which are coprime to  n. 
-[click here](<[https://pages.github.com/](https://cp-algorithms.com/algebra/phi-function.html)>).
-For more information [_Click here_](https://cp-algorithms.com/algebra/phi-function.html).
+Euler's totient function, also known as phi-function $\phi(n)$ , counts the number of integers between 1 and  n  inclusive, which are coprime to  n.
+
+<!-- [click here](<[https://pages.github.com/](https://cp-algorithms.com/algebra/phi-function.html)>).
+For more information [_Click here_](https://cp-algorithms.com/algebra/phi-function.html). -->
 
 ```c++
 ll phi_fun(ll n) {
