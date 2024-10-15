@@ -74,31 +74,43 @@
 ```html
 <details>
   <summary>
-    Questions?<br /><span
-      style="font-weight: bold; color: #3498db; font-size: 0.8em;"
-      >Company name (Question asking year)</span
-    >
+    Questions?
+    <br /><span style="font-weight: bold; color: #3498db; font-size: 0.8em;">
+      Company name (Question asking year)
+    </span>
   </summary>
   <hr />
-  Trie Data structure
+  answer
+</details>
+```
+
+### Edit only this section
+
+```html
+<details>
+  <summary>
+    Questions? // [!code focus]
+    <br /><span style="font-weight: bold; color: #3498db; font-size: 0.8em;">
+      Company name (Question asking year) // [!code focus]
+    </span>
+  </summary>
+  <hr />
+  answer // [!code focus]
 </details>
 ```
 
 Example:
 
-```
+```html
 <details>
   <summary>
-    What are the main pillars of OOP<br /><span
-      style="font-weight: bold; color: #3498db; font-size: 0.8em;"
-      >Orbitax (2024)</span
-    >
+    What are the main pillars of OOP
+    <br /><span style="font-weight: bold; color: #3498db; font-size: 0.8em;">
+      Orbitax (2024)
+    </span>
   </summary>
   <hr />
-  1.Inheritance
-  2.Polymorphism
-  3.Abstruction
-  4.Encapsulation
+  1.Inheritance 2.Polymorphism 3.Abstruction 4.Encapsulation
 </details>
 ```
 
