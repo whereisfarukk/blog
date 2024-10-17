@@ -9,6 +9,13 @@ export default defineConfig({
   cleanUrls: true,
   themeConfig: {
     nav: [
+      {
+        text: "← Back",
+        link: "https://whereisfarukk.github.io/",
+        activeMatch: "^$", // Disable highlighting
+        // onclick: "window.history.back()", // JavaScript back functionality
+        target: "_self",
+      },
       { text: "Home", link: "/" },
       { text: "Blog", link: "/general" },
     ],
@@ -42,9 +49,9 @@ export default defineConfig({
           },
         ],
       },
-      {
-        items: [{ text: "CSE competitions", link: "/competitions" }],
-      },
+      // {
+      //   items: [{ text: "CSE competitions", link: "/competitions" }],
+      // },
     ],
     socialLinks: [
       {
@@ -62,6 +69,24 @@ export default defineConfig({
     lastUpdated: true,
     ignoreDeadLinks: true,
     head: [
+      // [
+      //   "script",
+      //   {},
+      //   `
+      //   document.addEventListener('DOMContentLoaded', function() {
+      //     const navTitle = document.querySelector('.VPNavBar .title');
+      //     if (navTitle) {
+      //       const link = document.createElement('a');
+      //       link.href = '/';
+      //       link.style.textDecoration = 'none';
+      //       link.style.color = 'inherit';
+      //       link.innerHTML = '← Back to Whereisfarukk'; // Back arrow with clickable title
+      //       navTitle.innerHTML = '';
+      //       navTitle.appendChild(link);
+      //     }
+      //   });
+      //   `,
+      // ],
       [
         "script",
         {
