@@ -49,7 +49,7 @@ export default defineConfig({
           },
           {
             text: "CS Concept",
-            link: "/somepopularalgo",
+            link: "/cs_concept/",
             items: [
               {
                 text: "Concurrency vs parallelism",
