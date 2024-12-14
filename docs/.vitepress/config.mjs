@@ -47,6 +47,18 @@ export default defineConfig({
               },
             ],
           },
+          {
+            text: "CS Concept",
+            link: "/somepopularalgo",
+            items: [
+              {
+                text: "Concurrency vs parallelism",
+                link: "/cs_concept/Concurrency_vs_parallelism.md",
+              },
+              // { text: "CP", link: "/interview-question/technical/CP.md" },
+              // { text: "SQL", link: "/interview-question/technical/SQL.md" },
+            ],
+          },
         ],
       },
       // {
