@@ -23,6 +23,7 @@ export default defineConfig({
       {
         items: [
           { text: "General guidelines", link: "/general" },
+          { text: "VS code setup", link: "/vscodesetup.md" },
           { text: "Git Cheat Sheet", link: "/gitcheat" },
           { text: "Some popular algorithm", link: "/somepopularalgo" },
           {
