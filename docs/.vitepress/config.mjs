@@ -23,7 +23,19 @@ export default defineConfig({
       {
         items: [
           { text: "General guidelines", link: "/general" },
-          { text: "VS code setup", link: "/vscodesetup.md" },
+          { 
+            text: "VS code setup", link: "/vs_code_setup/" ,
+            items:[
+              {
+                text: "EsLint setup",
+                link: "/vs_code_setup/eslint.md",
+              },
+              {
+                text: "Husky with Prettier setup",
+                link: "/vs_code_setup/huskyWprettier.md",
+              }
+            ]
+          },
           { text: "Git Cheat Sheet", link: "/gitcheat" },
           { text: "Some popular algorithm", link: "/somepopularalgo" },
           {
