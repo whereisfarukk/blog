@@ -1,10 +1,53 @@
+## An introduction to ESLint
+
+`ESLint` is a linter which helps to improve the code quality and fix bugs beforehand itself to avoid it from coming at runtime. It also helps to avoid hard to debug issues in future.
+
+There are also other linters available like `jslint`, `jshint` but `ESLint` is the most widely used and popular.
+
+ESLint displays warning or error message when-
+
+<ol>
+        <li>We use a variable without declaring it</li>
+        <li>We re-declare the variable</li>
+        <li>We try to change a constant value</li>
+        <li>We add unnecessary parenthesis</li>
+        <li>We use the wrong syntax</li>
+</ol>
+
+ESLint also provides suggestions based of preferred code style and wrong syntaxes.
+
+::: tip
+Note that, ESLint just displays warning or error so you can fix it but it does not stop program from running. It just makes your coding better.
+:::
+
+
+
+
+## Installation
+
 <h2 style="display: flex; align-items: center;">
   Setup ESLint 
   <img src="/resource/ES_lint/ESLint_logo.png" alt="ESLint Logo" style="height: 24px; margin-left: 5px;" />
 </h2>
 
 ### Installing eslint
-first install the eslint in project by the command
+Create a new folder with name any and from inside that folder execute following command in terminal
+```
+npm init -y
+OR
+yarn init -y
+```
+This will create a ```package.json``` file.
+
+Now, Install the eslint package as dev dependency as it’s only used for development and not in production.
+```
+npm install eslint --save-dev
+OR
+yarn add eslint --dev
+```
+<br>
+
+Now, install the eslint in project by the command
 <div style="background-color: #1e1e1e; color: #d4d4d4; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; border-radius: 4px; padding: 10px; margin: 20px 0; width: 90%; max-width: 800px;">
   <!-- Terminal header -->
   <div style="background-color: #2d2d2d; padding: 5px 10px; border-bottom: 1px solid #333; display: flex; align-items: center;">
