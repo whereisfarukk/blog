@@ -20,9 +20,6 @@ ESLint also provides suggestions based of preferred code style and wrong syntaxe
 Note that, ESLint just displays warning or error so you can fix it but it does not stop program from running. It just makes your coding better.
 :::
 
-
-
-
 ## Installation
 
 <h2 style="display: flex; align-items: center;">
@@ -31,23 +28,46 @@ Note that, ESLint just displays warning or error so you can fix it but it does n
 </h2>
 
 ### Installing eslint
+
 Create a new folder with name any and from inside that folder execute following command in terminal
+
+::: code-group
+
+```console [npm]
+$ npm init -y
+
 ```
-npm init -y
-OR
-yarn init -y
+
+```console [yarn]
+$ yarn init -y
+
 ```
-This will create a ```package.json``` file.
+
+:::
+
+This will create a `package.json` file.
 
 Now, Install the eslint package as dev dependency as it’s only used for development and not in production.
+
+::: code-group
+
+```console [npm]
+$ npm install eslint --save-dev
+
 ```
-npm install eslint --save-dev
-OR
-yarn add eslint --dev
+
+```console [yarn]
+$ yarn add eslint --dev
+
+
 ```
+
+:::
+
 <br>
 
 Now, install the eslint in project by the command
+
 <div style="background-color: #1e1e1e; color: #d4d4d4; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; border-radius: 4px; padding: 10px; margin: 20px 0; width: 90%; max-width: 800px;">
   <!-- Terminal header -->
   <div style="background-color: #2d2d2d; padding: 5px 10px; border-bottom: 1px solid #333; display: flex; align-items: center;">
@@ -62,9 +82,8 @@ Now, install the eslint in project by the command
   </div>
 </div>
 
-
-It will ask some questions and create a file named ```eslint.config.mjs```
-inside the ```eslint.config.mjs``` ,we can add our rules for checking code-
+It will ask some questions and create a file named `eslint.config.mjs`
+inside the `eslint.config.mjs` ,we can add our rules for checking code-
 
 ::: details Click me to toggle the code {open}
 
@@ -72,24 +91,26 @@ inside the ```eslint.config.mjs``` ,we can add our rules for checking code-
 import globals from "globals";
 import pluginJs from "@eslint/js";
 
-
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  {languageOptions: { globals: {...globals.browser, ...globals.node} }},
+  { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
   pluginJs.configs.recommended,
-  { // [!code focus]
-    rules: { // [!code focus]
-      'no-unused-vars': 'warn', // [!code focus]
-       semi: ['warn', 'always'], // [!code focus]
+  {
+    // [!code focus]
+    rules: {
+      // [!code focus]
+      "no-unused-vars": "warn", // [!code focus]
+      semi: ["warn", "always"], // [!code focus]
     }, // [!code focus]
-  } // [!code focus]
+  }, // [!code focus]
 ];
-
 ```
+
 :::
 For adding more rules ,visit the page [Link](https://eslint.org/docs/latest/rules)
 
-To run the eslint via terminal add the scripts in ```pakage.json``` file
+To run the eslint via terminal add the scripts in `pakage.json` file
+
 ```json
  "scripts": { // [!code focus]
     "prepare": "husky",
@@ -97,6 +118,7 @@ To run the eslint via terminal add the scripts in ```pakage.json``` file
     "lint:fix":"eslint --fix" // [!code focus]
   }, // [!code focus]
 ```
+
 ESLint setup is now complete.To run the script execute the command npm run lint for showing the errors that was in the rules and npm run lint:fix for fixable errors.
 
 <div style="background-color: #1e1e1e; color: #d4d4d4; font-family: 'Courier New', Courier, monospace; border: 1px solid #333; border-radius: 4px; padding: 10px; margin: 20px 0; width: 90%; max-width: 800px;">
@@ -115,5 +137,3 @@ ESLint setup is now complete.To run the script execute the command npm run lint 
     <span style="color: #569cd6;">user@machine</span>:<span style="color: #9cdcfe;">~/project</span>$ <span>npm run lint:fix</span>
   </div>
 </div>
-  
-  
