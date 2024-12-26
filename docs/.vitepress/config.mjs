@@ -23,9 +23,10 @@ export default defineConfig({
       {
         items: [
           { text: "General guidelines", link: "/general" },
-          { 
-            text: "VS code setup", link: "/vs_code_setup/" ,
-            items:[
+          {
+            text: "VS code setup",
+            link: "/vs_code_setup/",
+            items: [
               {
                 text: "EsLint setup",
                 link: "/vs_code_setup/eslint.md",
@@ -33,8 +34,8 @@ export default defineConfig({
               {
                 text: "Husky with Prettier setup",
                 link: "/vs_code_setup/huskyWprettier.md",
-              }
-            ]
+              },
+            ],
           },
           { text: "Git Cheat Sheet", link: "/gitcheat" },
           { text: "Some popular algorithm", link: "/somepopularalgo" },
@@ -70,6 +71,16 @@ export default defineConfig({
               },
               // { text: "CP", link: "/interview-question/technical/CP.md" },
               // { text: "SQL", link: "/interview-question/technical/SQL.md" },
+            ],
+          },
+          {
+            text: "JavaScript",
+            link: "/javascript/",
+            items: [
+              {
+                text: "Callback&Promise",
+                link: "/javascript/callback&promise.md",
+              },
             ],
           },
         ],
