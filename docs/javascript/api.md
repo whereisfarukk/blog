@@ -73,7 +73,7 @@ getEmoji();
 A currency converter for learning Fetch API calls, enabling real-time currency conversion.    
 </p>
     <div style="display: flex; gap: 10px;">
-      <a href="https://whereisfarukk.github.io/currency-converter/" style="text-decoration: none; color: #4facfe; font-weight: bold; padding: 5px 10px; border-radius: 5px; border: 1px solid #4facfe; transition: background-color 0.3s ease, color 0.3s ease;">Live Demo</a>
+      <a href="https://whereisfarukk.github.io/currency-converter/" style="text-decoration: none; color: #4facfe; font-weight: bold; padding: 5px 10px; border-radius: 5px; border: 1px solid #4facfe; transition: background-color 0.3s ease, color 0.3s ease;"target="_blank">Live Demo</a>
       <a href="https://github.com/whereisfarukk/currency-converter" style="text-decoration: none; color: #4facfe; font-weight: bold; padding: 5px 10px; border-radius: 5px; border: 1px solid #4facfe; transition: background-color 0.3s ease, color 0.3s ease;">GitHub Repo</a>
     </div>
   </div>
