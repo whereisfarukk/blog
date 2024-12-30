@@ -81,6 +81,10 @@ export default defineConfig({
                 text: "Callback&Promise",
                 link: "/javascript/callback&promise.md",
               },
+              {
+                text: "Api call",
+                link: "/javascript/api.md",
+              },
             ],
           },
         ],
