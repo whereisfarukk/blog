@@ -3,7 +3,6 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs --port 8080",
-
     "build": "vitepress build",
     "deploy": "vitepress build && gh-pages -d .vitepress/dist"
   },
@@ -15,6 +14,7 @@
   },
   "dependencies": {
     "katex": "^0.16.11",
-    "mermaid": "^11.3.0"
+    "mermaid": "^11.3.0",
+    "vue": "^3.5.13"
   }
 }

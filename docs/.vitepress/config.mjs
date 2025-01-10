@@ -85,6 +85,10 @@ export default defineConfig({
                 text: "Api call",
                 link: "/javascript/api.md",
               },
+              {
+                text: "Back-end",
+                link: "/javascript/backend.md",
+              },
             ],
           },
         ],
