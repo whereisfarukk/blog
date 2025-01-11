@@ -133,3 +133,4 @@ github.community or contact support.
 ## Git Workflow Diagram
 
 ![An image](./resource/git_workflow.gif)
+
