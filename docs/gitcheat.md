@@ -2,6 +2,12 @@
 
 ## Configure tooling
 
+<div class="mermaid">
+sequenceDiagram
+  Alice->>John: Hello John, how are you?
+  John-->>Alice: Great!
+</div>
+
 ```console
 $ git config --global user.name "[name]"
 ```

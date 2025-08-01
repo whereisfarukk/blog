@@ -3,18 +3,20 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs --port 8080",
-
     "build": "vitepress build",
     "deploy": "vitepress build && gh-pages -d .vitepress/dist"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0",
     "markdown-it-mathjax3": "^4.3.2",
-    "markdown-it-mermaid": "^0.2.0",
-    "vitepress": "^1.4.0"
+    "markdown-it-mermaid": "^0.2.5",
+    "vitepress": "^1.4.0",
+    "vuepress-plugin-mermaidjs": "^2.0.0-beta.2"
   },
   "dependencies": {
+    "@renovamen/vuepress-plugin-mermaid": "^2.0.0-alpha.26",
     "katex": "^0.16.11",
-    "mermaid": "^11.3.0"
+    "mermaid": "^11.3.0",
+    "vuepress-plugin-markmap": "^0.2.0"
   }
 }

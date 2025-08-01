@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
-import markdownItMathjax from "markdown-it-mathjax3"; // Import the math plugin
-// import markdownItMermaid from "markdown-it-mermaid"; // Ensure this is imported
+import markdownItMathjax from "markdown-it-mathjax3";
 
 export default defineConfig({
   base: "/blog/",
@@ -12,8 +11,7 @@ export default defineConfig({
       {
         text: "← Back",
         link: "https://whereisfarukk.github.io/",
-        activeMatch: "^$", // Disable highlighting
-        // onclick: "window.history.back()", // JavaScript back functionality
+        activeMatch: "^$",
         target: "_self",
       },
       { text: "Home", link: "/" },
@@ -41,17 +39,11 @@ export default defineConfig({
               {
                 text: "Behavioral",
                 link: "/interview-question/behavioral/",
-                // items: [
-                //   { text: "OOP", link: "/interview-question/behavioral/OOP.md" },
-                // ],
               },
             ],
           },
         ],
       },
-      // {
-      //   items: [{ text: "CSE competitions", link: "/competitions" }],
-      // },
     ],
     socialLinks: [
       {
@@ -69,47 +61,21 @@ export default defineConfig({
     lastUpdated: true,
     ignoreDeadLinks: true,
     head: [
-      // [
-      //   "script",
-      //   {},
-      //   `
-      //   document.addEventListener('DOMContentLoaded', function() {
-      //     const navTitle = document.querySelector('.VPNavBar .title');
-      //     if (navTitle) {
-      //       const link = document.createElement('a');
-      //       link.href = '/';
-      //       link.style.textDecoration = 'none';
-      //       link.style.color = 'inherit';
-      //       link.innerHTML = '← Back to Whereisfarukk'; // Back arrow with clickable title
-      //       navTitle.innerHTML = '';
-      //       navTitle.appendChild(link);
-      //     }
-      //   });
-      //   `,
-      // ],
+      // Include the Mermaid CDN
       [
         "script",
-        {
-          async: "",
-          src: "https://www.googletagmanager.com/gtag/js?id=G-P6ZVQMX05B",
-        },
+        { src: "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js" },
       ],
       [
         "script",
         {},
-        `window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-P6ZVQMX05B');`,
+        `window.mermaid.initialize({ startOnLoad: true });`, // Initialize Mermaid
       ],
     ],
   },
   markdown: {
-    math: true, // Enable math support
     config(md) {
-      md.use(markdownItMathjax); // Use the math plugin
-      // md.use(markdownItMermaid);
+      md.use(markdownItMathjax); // MathJax plugin
     },
   },
 });
-// In your config.mjs
