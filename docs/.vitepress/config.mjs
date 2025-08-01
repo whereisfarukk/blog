@@ -21,6 +21,20 @@ export default defineConfig({
       {
         items: [
           { text: "General guidelines", link: "/general" },
+          {
+            text: "VS code setup",
+            link: "/vs_code_setup/",
+            items: [
+              {
+                text: "EsLint setup",
+                link: "/vs_code_setup/eslint.md",
+              },
+              {
+                text: "Husky with Prettier setup",
+                link: "/vs_code_setup/huskyWprettier.md",
+              },
+            ],
+          },
           { text: "Git Cheat Sheet", link: "/gitcheat" },
           { text: "Some popular algorithm", link: "/somepopularalgo" },
           {
@@ -39,6 +53,32 @@ export default defineConfig({
               {
                 text: "Behavioral",
                 link: "/interview-question/behavioral/",
+              },
+            ],
+          },
+          {
+            text: "CS Concept",
+            link: "/cs_concept/",
+            items: [
+              {
+                text: "Concurrency vs parallelism",
+                link: "/cs_concept/Concurrency_vs_parallelism.md",
+              },
+              { text: "Latency", link: "/cs_concept/Latency.md" },
+              // { text: "SQL", link: "/interview-question/technical/SQL.md" },
+            ],
+          },
+          {
+            text: "JavaScript",
+            link: "/javascript/",
+            items: [
+              {
+                text: "Callback&Promise",
+                link: "/javascript/callback&promise.md",
+              },
+              {
+                text: "Api call",
+                link: "/javascript/api.md",
               },
             ],
           },

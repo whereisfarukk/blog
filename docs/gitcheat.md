@@ -135,3 +135,8 @@ need to change commits that exist on GitHub (the remote),
 proceed with caution. If you need help, reach out at
 github.community or contact support.
 :::
+
+## Git Workflow Diagram
+
+![An image](./resource/git_workflow.gif)
+

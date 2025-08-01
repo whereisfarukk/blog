@@ -17,6 +17,6 @@
     "@renovamen/vuepress-plugin-mermaid": "^2.0.0-alpha.26",
     "katex": "^0.16.11",
     "mermaid": "^11.3.0",
-    "vuepress-plugin-markmap": "^0.2.0"
+    "vue": "^3.5.13"
   }
 }
