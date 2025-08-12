@@ -65,6 +65,7 @@ export default defineConfig({
                 link: "/cs_concept/Concurrency_vs_parallelism.md",
               },
               { text: "Latency", link: "/cs_concept/Latency.md" },
+              { text: "Networking", link: "/cs_concept/networking.md" },
               // { text: "SQL", link: "/interview-question/technical/SQL.md" },
             ],
           },
