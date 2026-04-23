@@ -66,7 +66,7 @@ export default defineConfig({
               },
               { text: "Latency", link: "/cs_concept/Latency.md" },
               { text: "Networking", link: "/cs_concept/networking.md" },
-              // { text: "SQL", link: "/interview-question/technical/SQL.md" },
+              { text: "Database", link: "/cs_concept/Database.md" },
             ],
           },
           {
