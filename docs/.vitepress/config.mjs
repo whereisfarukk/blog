@@ -36,7 +36,14 @@ export default defineConfig({
               },
             ],
           },
-          { text: "Git Cheat Sheet", link: "/gitcheat" },
+          {
+            text: "Git",
+            collapsed: true,
+            items: [
+              { text: "Cheat Sheet", link: "/gitcheat" },
+              { text: "Rewriting History", link: "/git_rewriting_history" },
+            ],
+          },
           { text: "Some popular algorithm", link: "/somepopularalgo" },
           {
             text: "Interview Questions",
