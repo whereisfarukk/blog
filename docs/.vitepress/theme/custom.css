@@ -20,3 +20,13 @@ summary {
 .github-alert {
   border-left: 0.35em solid #238636 !important;
 }
+
+/* Smooth chevron rotation for collapsible sidebar items */
+.VPSidebarItem .caret svg {
+  transition: transform 0.25s ease;
+}
+
+.VPSidebarItem.is-active > .item .caret svg,
+.VPSidebarItem.collapsed > .item .caret svg {
+  transition: transform 0.25s ease;
+}

@@ -24,6 +24,7 @@ export default defineConfig({
           {
             text: "VS code setup",
             link: "/vs_code_setup/",
+            collapsed: true,
             items: [
               {
                 text: "EsLint setup",
@@ -40,10 +41,12 @@ export default defineConfig({
           {
             text: "Interview Questions",
             link: "/interview-question/",
+            collapsed: true,
             items: [
               {
                 text: "Technical",
                 link: "/interview-question/technical/",
+                collapsed: true,
                 items: [
                   { text: "OOP", link: "/interview-question/technical/OOP.md" },
                   { text: "CP", link: "/interview-question/technical/CP.md" },
@@ -59,6 +62,7 @@ export default defineConfig({
           {
             text: "CS Concept",
             link: "/cs_concept/",
+            collapsed: true,
             items: [
               {
                 text: "Concurrency vs parallelism",
@@ -67,11 +71,16 @@ export default defineConfig({
               { text: "Latency", link: "/cs_concept/Latency.md" },
               { text: "Networking", link: "/cs_concept/networking.md" },
               { text: "Database", link: "/cs_concept/Database.md" },
+              {
+                text: "Memory & Cache",
+                link: "/cs_concept/memory_cache.md",
+              },
             ],
           },
           {
             text: "JavaScript",
             link: "/javascript/",
+            collapsed: true,
             items: [
               {
                 text: "Callback&Promise",
