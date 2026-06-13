@@ -1,6 +1,7 @@
 // .vitepress/theme/index.js
 import DefaultTheme from "vitepress/theme";
 import "katex/dist/katex.min.css";
+import "./custom.css";
 import { defineComponent, h } from "vue";
 import katex from "katex";
 
