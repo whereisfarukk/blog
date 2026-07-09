@@ -28,7 +28,6 @@ The outline is as follows:
 
 - A preview of the six recursive patterns
 
-Project-based learning is the best way to develop technical skills. CodeCrafters is an excellent platform for tackling exciting projects, such as building your own Redis, Kafka, a DNS server, SQLite, or Git from scratch. Sign up, and become a better software engineer.
 
 ## When to Use Recursion
 There is a fact about recursion that people often overlook: any problem that can be solved recursively can also be solved iteratively. There is no case where you need to use recursion.
