@@ -6,7 +6,7 @@ outline: deep
 
 > From the basics of Big O to advanced analysis techniques — a complete guide to evaluating algorithm efficiency across distributed systems, AI, and specialized hardware.
 
-**July 17, 2024** &nbsp;&nbsp;|&nbsp;&nbsp; `#algorithms` &nbsp;`#complexity` &nbsp;`#performance` &nbsp;`#big-o`
+**May 10, 2025** &nbsp;&nbsp;|&nbsp;&nbsp; `#algorithms` &nbsp;`#complexity` &nbsp;`#performance` &nbsp;`#big-o`
 
 ---
 
@@ -34,16 +34,16 @@ It provides insights into how an algorithm scales with larger datasets and helps
 
 Big O notation describes the upper bound of an algorithm's time requirements in the worst-case scenario. Here's a complete breakdown ordered from most efficient to least efficient:
 
-| Notation | Name | Description |
-|---|---|---|
-| `O(1)` | Constant | Same time regardless of input size |
-| `O(log n)` | Logarithmic | Divides the problem into smaller subproblems each step |
-| `O(n)` | Linear | Time grows directly in proportion to input size |
-| `O(n log n)` | Linearithmic | Common in efficient divide-and-conquer sorting |
-| `O(n²)` | Quadratic | Grows quadratically — common in nested loops |
-| `O(n³)` | Cubic | Grows cubically — common in triple nested loops |
-| `O(2ⁿ)` | Exponential | Doubles with each addition to input |
-| `O(n!)` | Factorial | Grows factorially — permutation problems |
+| Notation     | Name         | Description                                            |
+| ------------ | ------------ | ------------------------------------------------------ |
+| `O(1)`       | Constant     | Same time regardless of input size                     |
+| `O(log n)`   | Logarithmic  | Divides the problem into smaller subproblems each step |
+| `O(n)`       | Linear       | Time grows directly in proportion to input size        |
+| `O(n log n)` | Linearithmic | Common in efficient divide-and-conquer sorting         |
+| `O(n²)`      | Quadratic    | Grows quadratically — common in nested loops           |
+| `O(n³)`      | Cubic        | Grows cubically — common in triple nested loops        |
+| `O(2ⁿ)`      | Exponential  | Doubles with each addition to input                    |
+| `O(n!)`      | Factorial    | Grows factorially — permutation problems               |
 
 ---
 
@@ -247,22 +247,24 @@ Optimizing algorithms involves balancing these factors to achieve optimal perfor
 AI and machine learning algorithms face unique challenges due to their computational intensity and reliance on large datasets.
 
 **Time complexity** considerations include:
+
 - Training models (neural networks, support vector machines)
 - Optimizing algorithms for feature extraction and dimensionality reduction
 - Pattern recognition tasks
 
 **Space complexity** becomes crucial in:
+
 - Managing memory-intensive operations such as storing high-dimensional data
 - Handling large model parameters
 - Efficient inference at serving time
 
 ### Application in AI and Machine Learning
 
-| Task | Concern |
-|---|---|
-| Gradient descent, neural network training | Time — handling large datasets efficiently |
-| Sparse matrices, hash maps | Space — minimizing memory, ensuring scalability |
-| Decision tree learning | Both — tree depth vs. accuracy trade-off |
+| Task                                      | Concern                                         |
+| ----------------------------------------- | ----------------------------------------------- |
+| Gradient descent, neural network training | Time — handling large datasets efficiently      |
+| Sparse matrices, hash maps                | Space — minimizing memory, ensuring scalability |
+| Decision tree learning                    | Both — tree depth vs. accuracy trade-off        |
 
 ---
 
@@ -281,6 +283,7 @@ Different algorithmic paradigms have varying impacts on time and space complexit
 In distributed systems, algorithms must not only be efficient locally but also **scalable across multiple nodes**. Time complexity considerations extend to communication overhead and synchronization costs between nodes, influencing the overall performance of distributed applications.
 
 Techniques that help mitigate these challenges:
+
 - **MapReduce** — parallel data processing across clusters
 - **Distributed caching** — reducing redundant computation
 - **Partitioning strategies** — distributing load evenly across nodes
@@ -303,6 +306,7 @@ These considerations are critical when designing lock-free data structures, mess
 Advances in hardware architecture — GPUs, TPUs, and specialized accelerators for AI and machine learning — require algorithms optimized not just for traditional CPU performance but also for **parallel processing and vectorized operations**.
 
 Optimizing algorithms for specific hardware involves deep understanding of:
+
 - Memory hierarchy and cache utilization
 - SIMD/vectorization opportunities
 - Computational throughput vs. memory bandwidth trade-offs
@@ -345,5 +349,5 @@ As software systems evolve to handle larger datasets, real-time processing deman
 Time and space complexity are not just theoretical concepts but **practical tools** that guide developers in creating efficient, scalable, and robust software solutions. By mastering these concepts — from the fundamentals of `O(1)` through the nuances of distributed and concurrent systems — developers can meet the evolving demands of modern computing environments and drive innovation in software development.
 
 ::: info Reference
-Based on *"Beyond Big O: Advanced Time Complexity Concepts"* — Startupsgurukul, July 17, 2024.
+Based on _"Beyond Big O: Advanced Time Complexity Concepts"_ — Startupsgurukul, July 17, 2024.
 :::
