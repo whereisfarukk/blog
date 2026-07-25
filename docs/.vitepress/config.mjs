@@ -105,7 +105,7 @@ export default defineConfig({
             collapsed: true,
             items: [
               { text: "Recursion", link: "/dsa/recursion" },
-              { text: "Time Complexity", link: "/dsa/time_complexity" },
+              { text: "Time & Space Complexity", link: "/dsa/time_complexity" },
               { text: "Arrays", link: "/dsa/arrays" },
               { text: "Linked Lists", link: "/dsa/linked_lists" },
               { text: "Hash Tables", link: "/dsa/hash_tables" },
